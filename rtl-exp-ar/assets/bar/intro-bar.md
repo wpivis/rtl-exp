@@ -22,7 +22,7 @@
 <!-- ![الرسم البياني المستخدم في الدراسة](rtl-exp-ar/assets/bar/intro-bar-ex-ar.png) -->
 
 <div>
-  <img src="rtl-exp-ar/assets/bar/intro-bar-ex-ar.png" style="width:650px; height:auto; display:block; margin:0 auto;" />
+  <img src="rtl-exp-ar/assets/bar/intro-bar-ex-ar.png" style="width:500px; height:auto; display:block; margin:0 auto;" />
   <br/>
 </div>
 
