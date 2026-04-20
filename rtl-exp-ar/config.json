@@ -659,7 +659,7 @@
                 },
                 {
                     "id": "q9-chart-creation",
-                    "prompt": "<div dir=\"rtl\">ما معدل إنشاء أو تصميمك للرسوم البيانية أو تصور البيانات؟</div>",
+                    "prompt": "<div dir=\"rtl\">ما معدل إنشاء أو تصميمك للرسوم البيانية أو رسم البيانات؟</div>",
                     "required": true,
                     "location": "aboveStimulus",
                     "type": "dropdown",
@@ -673,7 +673,7 @@
                 },
                 {
                     "id": "q10-chart-encounter",
-                    "prompt": "<div dir=\"rtl\">ما معدل مواجهتك للرسوم البيانية أو تصور البيانات؟</div>",
+                    "prompt": "<div dir=\"rtl\">ما معدل مواجهتك للرسوم البيانية أو رسم البيانات؟</div>",
                     "required": true,
                     "location": "aboveStimulus",
                     "type": "dropdown",
@@ -707,10 +707,14 @@
             "path": "rtl-exp-ar/assets/outro.md",
             "response": []
         },
-
         "bar-1-u": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "1-u", "cat": "count-all", "chartType": "bar", "sorted": "u" },
+            "meta": {
+                "qId": "1-u",
+                "cat": "count-all",
+                "chartType": "bar",
+                "sorted": "u"
+            },
             "description": "رسم بياني عمودي: كم يوماً استغرقت عملية جمع البيانات؟",
             "instruction": "<div dir=\"rtl\">كم يوماً استغرقت عملية جمع البيانات؟<br><em>(يمثل كل عمود في الرسم البياني يومًا واحدًا.)</em></div>",
             "parameters": {
@@ -730,13 +734,21 @@
         },
         "bar-2-sst": {
             "baseComponent": "trial-dropdown",
-            "meta": { "qId": "2-sst", "cat": "identify-trend", "chartType": "bar", "sorted": "sst" },
+            "meta": {
+                "qId": "2-sst",
+                "cat": "identify-trend",
+                "chartType": "bar",
+                "sorted": "sst"
+            },
             "description": "رسم بياني عمودي (مرتب من الأقصر إلى الأطول): هل زاد عدد الزوار أم انخفض؟",
             "instruction": "<div dir=\"rtl\">هل زاد عدد الزوار أم انخفض خلال فترة الدراسة؟</div>",
             "parameters": {
                 "imagePath": "rtl-exp-ar/assets/bar/img-trials/bar-2-sst.svg",
                 "prompt": "عدد الزوار:",
-                "options": ["في تزايد", "في انخفاض"],
+                "options": [
+                    "في تزايد",
+                    "في انخفاض"
+                ],
                 "responseId": "bar-2-sst-ans"
             },
             "response": [
@@ -750,13 +762,21 @@
         },
         "bar-2-sts": {
             "baseComponent": "trial-dropdown",
-            "meta": { "qId": "2-sts", "cat": "identify-trend", "chartType": "bar", "sorted": "sts" },
+            "meta": {
+                "qId": "2-sts",
+                "cat": "identify-trend",
+                "chartType": "bar",
+                "sorted": "sts"
+            },
             "description": "رسم بياني عمودي (مرتب من الأطول إلى الأقصر): هل زاد عدد الزوار أم انخفض؟",
             "instruction": "<div dir=\"rtl\">هل زاد عدد الزوار أم انخفض خلال فترة الدراسة؟</div>",
             "parameters": {
                 "imagePath": "rtl-exp-ar/assets/bar/img-trials/bar-2-sts.svg",
                 "prompt": "عدد الزوار:",
-                "options": ["في تزايد", "في انخفاض"],
+                "options": [
+                    "في تزايد",
+                    "في انخفاض"
+                ],
                 "responseId": "bar-2-sts-ans"
             },
             "response": [
@@ -770,7 +790,12 @@
         },
         "bar-3-u": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "3-u", "cat": "extract-value", "chartType": "bar", "sorted": "u" },
+            "meta": {
+                "qId": "3-u",
+                "cat": "extract-value",
+                "chartType": "bar",
+                "sorted": "u"
+            },
             "description": "رسم بياني عمودي: كم عدد الزوار في اليوم الخامس؟",
             "instruction": "<div dir=\"rtl\">كم عدد الزوار في اليوم الخامس؟</div>",
             "parameters": {
@@ -789,7 +814,12 @@
         },
         "bar-4-sst": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "4-sst", "cat": "extract-value", "chartType": "bar", "sorted": "sst" },
+            "meta": {
+                "qId": "4-sst",
+                "cat": "extract-value",
+                "chartType": "bar",
+                "sorted": "sst"
+            },
             "description": "رسم بياني عمودي (مرتب من الأقصر إلى الأطول): كم عدد الزوار في اليوم السادس؟",
             "instruction": "<div dir=\"rtl\">كم عدد الزوار في اليوم السادس؟</div>",
             "parameters": {
@@ -808,7 +838,12 @@
         },
         "bar-4-sts": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "4-sts", "cat": "extract-value", "chartType": "bar", "sorted": "sts" },
+            "meta": {
+                "qId": "4-sts",
+                "cat": "extract-value",
+                "chartType": "bar",
+                "sorted": "sts"
+            },
             "description": "رسم بياني عمودي (مرتب من الأطول إلى الأقصر): كم عدد الزوار في اليوم السادس؟",
             "instruction": "<div dir=\"rtl\">كم عدد الزوار في اليوم السادس؟</div>",
             "parameters": {
@@ -827,7 +862,12 @@
         },
         "bar-5-u-1": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "5-u-1", "cat": "count", "chartType": "bar", "sorted": "u" },
+            "meta": {
+                "qId": "5-u-1",
+                "cat": "count",
+                "chartType": "bar",
+                "sorted": "u"
+            },
             "description": "رسم بياني عمودي (عطلة واحدة): كم عدد العطلات أثناء الدراسة؟",
             "instruction": "<div dir=\"rtl\">كم عدد العطلات التي كانت هناك أثناء الدراسة؟</div>",
             "parameters": {
@@ -846,7 +886,12 @@
         },
         "bar-5-u-2": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "5-u-2", "cat": "count", "chartType": "bar", "sorted": "u" },
+            "meta": {
+                "qId": "5-u-2",
+                "cat": "count",
+                "chartType": "bar",
+                "sorted": "u"
+            },
             "description": "رسم بياني عمودي (عطلتان): كم عدد العطلات أثناء الدراسة؟",
             "instruction": "<div dir=\"rtl\">كم عدد العطلات التي كانت هناك أثناء الدراسة؟<br><em>(يتم تمثيل العطلة بواسطة عمود أسود.)</em></div>",
             "parameters": {
@@ -866,7 +911,12 @@
         },
         "bar-6-count-until": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "6-count-until", "cat": "count", "chartType": "bar", "sorted": "u" },
+            "meta": {
+                "qId": "6-count-until",
+                "cat": "count",
+                "chartType": "bar",
+                "sorted": "u"
+            },
             "description": "رسم بياني عمودي: كم يوم مضى حتى العطلة؟",
             "instruction": "<div dir=\"rtl\">كم يوم مضى حتى العطلة الرسمية؟<br><em>(لا تقم بتضمين العطلة الرسمية في حسابك.)</em></div>",
             "parameters": {
@@ -886,7 +936,12 @@
         },
         "bar-6-count-from": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "6-count-from", "cat": "count", "chartType": "bar", "sorted": "u" },
+            "meta": {
+                "qId": "6-count-from",
+                "cat": "count",
+                "chartType": "bar",
+                "sorted": "u"
+            },
             "description": "رسم بياني عمودي: كم يوم مر على العطلة؟",
             "instruction": "<div dir=\"rtl\">كم يوم مر على العطلة الرسمية؟<br><em>(لا تقم بتضمين العطلة الرسمية في حسابك.)</em></div>",
             "parameters": {
@@ -906,7 +961,12 @@
         },
         "bar-7-extract-before-u": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-before-u", "cat": "extract-before", "chartType": "bar", "sorted": "u" },
+            "meta": {
+                "qId": "7-extract-before-u",
+                "cat": "extract-before",
+                "chartType": "bar",
+                "sorted": "u"
+            },
             "description": "رسم بياني عمودي: كم عدد الزوار في اليوم السابق للعطلة؟",
             "instruction": "<div dir=\"rtl\">كم عدد الزوار في اليوم السابق للعطلة الرسمية؟</div>",
             "parameters": {
@@ -925,7 +985,12 @@
         },
         "bar-7-extract-before-sst": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-before-sst", "cat": "extract-before", "chartType": "bar", "sorted": "sst" },
+            "meta": {
+                "qId": "7-extract-before-sst",
+                "cat": "extract-before",
+                "chartType": "bar",
+                "sorted": "sst"
+            },
             "description": "رسم بياني عمودي (مرتب من الأقصر إلى الأطول): كم عدد الزوار في اليوم السابق للعطلة؟",
             "instruction": "<div dir=\"rtl\">كم عدد الزوار في اليوم السابق للعطلة الرسمية؟</div>",
             "parameters": {
@@ -944,7 +1009,12 @@
         },
         "bar-7-extract-before-sts": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-before-sts", "cat": "extract-before", "chartType": "bar", "sorted": "sts" },
+            "meta": {
+                "qId": "7-extract-before-sts",
+                "cat": "extract-before",
+                "chartType": "bar",
+                "sorted": "sts"
+            },
             "description": "رسم بياني عمودي (مرتب من الأطول إلى الأقصر): كم عدد الزوار في اليوم السابق للعطلة؟",
             "instruction": "<div dir=\"rtl\">كم عدد الزوار في اليوم السابق للعطلة الرسمية؟</div>",
             "parameters": {
@@ -963,7 +1033,12 @@
         },
         "bar-7-extract-after-u": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-after-u", "cat": "extract-after", "chartType": "bar", "sorted": "u" },
+            "meta": {
+                "qId": "7-extract-after-u",
+                "cat": "extract-after",
+                "chartType": "bar",
+                "sorted": "u"
+            },
             "description": "رسم بياني عمودي: كم عدد الزوار في اليوم التالي للعطلة؟",
             "instruction": "<div dir=\"rtl\">كم عدد الزوار في اليوم التالي للعطلة الرسمية؟</div>",
             "parameters": {
@@ -982,7 +1057,12 @@
         },
         "bar-7-extract-after-sst": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-after-sst", "cat": "extract-after", "chartType": "bar", "sorted": "sst" },
+            "meta": {
+                "qId": "7-extract-after-sst",
+                "cat": "extract-after",
+                "chartType": "bar",
+                "sorted": "sst"
+            },
             "description": "رسم بياني عمودي (مرتب من الأقصر إلى الأطول): كم عدد الزوار في اليوم التالي للعطلة؟",
             "instruction": "<div dir=\"rtl\">كم عدد الزوار في اليوم التالي للعطلة الرسمية؟</div>",
             "parameters": {
@@ -1001,7 +1081,12 @@
         },
         "bar-7-extract-after-sts": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-after-sts", "cat": "extract-after", "chartType": "bar", "sorted": "sts" },
+            "meta": {
+                "qId": "7-extract-after-sts",
+                "cat": "extract-after",
+                "chartType": "bar",
+                "sorted": "sts"
+            },
             "description": "رسم بياني عمودي (مرتب من الأطول إلى الأقصر): كم عدد الزوار في اليوم التالي للعطلة؟",
             "instruction": "<div dir=\"rtl\">كم عدد الزوار في اليوم التالي للعطلة الرسمية؟</div>",
             "parameters": {
@@ -1018,10 +1103,14 @@
                 }
             ]
         },
-
         "line-1-u": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "1-u", "cat": "count-all", "chartType": "line", "sorted": "u" },
+            "meta": {
+                "qId": "1-u",
+                "cat": "count-all",
+                "chartType": "line",
+                "sorted": "u"
+            },
             "description": "رسم بياني خطي: كم سنة استغرقت عملية جمع البيانات؟",
             "instruction": "<div dir=\"rtl\">كم سنة استغرقت عملية جمع البيانات؟<br><em>(تمثل كل نقطة في الرسم البياني سنة واحدة.)</em></div>",
             "parameters": {
@@ -1041,13 +1130,21 @@
         },
         "line-2-sst": {
             "baseComponent": "trial-dropdown",
-            "meta": { "qId": "2-sst", "cat": "identify-trend", "chartType": "line", "sorted": "sst" },
+            "meta": {
+                "qId": "2-sst",
+                "cat": "identify-trend",
+                "chartType": "line",
+                "sorted": "sst"
+            },
             "description": "رسم بياني خطي (مرتب من الأقصر إلى الأطول): هل زاد عدد الأعمال الفنية أم انخفض؟",
             "instruction": "<div dir=\"rtl\">هل زاد عدد الأعمال الفنية المقتناة أم انخفض خلال فترة الدراسة؟</div>",
             "parameters": {
                 "imagePath": "rtl-exp-ar/assets/line/img-trials/line-2-sst.png",
                 "prompt": "عدد الأعمال الفنية المقتناة:",
-                "options": ["في تزايد", "في انخفاض"],
+                "options": [
+                    "في تزايد",
+                    "في انخفاض"
+                ],
                 "responseId": "line-2-sst-ans"
             },
             "response": [
@@ -1061,13 +1158,21 @@
         },
         "line-2-sts": {
             "baseComponent": "trial-dropdown",
-            "meta": { "qId": "2-sts", "cat": "identify-trend", "chartType": "line", "sorted": "sts" },
+            "meta": {
+                "qId": "2-sts",
+                "cat": "identify-trend",
+                "chartType": "line",
+                "sorted": "sts"
+            },
             "description": "رسم بياني خطي (مرتب من الأطول إلى الأقصر): هل زاد عدد الأعمال الفنية أم انخفض؟",
             "instruction": "<div dir=\"rtl\">هل زاد عدد الأعمال الفنية المقتناة أم انخفض خلال فترة الدراسة؟</div>",
             "parameters": {
                 "imagePath": "rtl-exp-ar/assets/line/img-trials/line-2-sts.png",
                 "prompt": "عدد الأعمال الفنية المقتناة:",
-                "options": ["في تزايد", "في انخفاض"],
+                "options": [
+                    "في تزايد",
+                    "في انخفاض"
+                ],
                 "responseId": "line-2-sts-ans"
             },
             "response": [
@@ -1081,7 +1186,12 @@
         },
         "line-3-u": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "3-u", "cat": "extract-value", "chartType": "line", "sorted": "u" },
+            "meta": {
+                "qId": "3-u",
+                "cat": "extract-value",
+                "chartType": "line",
+                "sorted": "u"
+            },
             "description": "رسم بياني خطي: كم عدد الأعمال الفنية في السنة الخامسة؟",
             "instruction": "<div dir=\"rtl\">كم عدد الأعمال الفنية التي تم اقتناؤها في السنة الخامسة؟</div>",
             "parameters": {
@@ -1100,7 +1210,12 @@
         },
         "line-4-sst": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "4-sst", "cat": "extract-value", "chartType": "line", "sorted": "sst" },
+            "meta": {
+                "qId": "4-sst",
+                "cat": "extract-value",
+                "chartType": "line",
+                "sorted": "sst"
+            },
             "description": "رسم بياني خطي (مرتب من الأقصر إلى الأطول): كم عدد الأعمال الفنية في السنة السادسة؟",
             "instruction": "<div dir=\"rtl\">كم عدد الأعمال الفنية التي تم اقتناؤها في السنة السادسة؟</div>",
             "parameters": {
@@ -1119,7 +1234,12 @@
         },
         "line-4-sts": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "4-sts", "cat": "extract-value", "chartType": "line", "sorted": "sts" },
+            "meta": {
+                "qId": "4-sts",
+                "cat": "extract-value",
+                "chartType": "line",
+                "sorted": "sts"
+            },
             "description": "رسم بياني خطي (مرتب من الأطول إلى الأقصر): كم عدد الأعمال الفنية في السنة السادسة؟",
             "instruction": "<div dir=\"rtl\">كم عدد الأعمال الفنية التي تم اقتناؤها في السنة السادسة؟</div>",
             "parameters": {
@@ -1138,7 +1258,12 @@
         },
         "line-5-u-1": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "5-u-1", "cat": "count", "chartType": "line", "sorted": "u" },
+            "meta": {
+                "qId": "5-u-1",
+                "cat": "count",
+                "chartType": "line",
+                "sorted": "u"
+            },
             "description": "رسم بياني خطي (عمل فني مميز واحد): كم عدد السنوات التي استُقبل فيها عمل فني مميز؟",
             "instruction": "<div dir=\"rtl\">كم عدد السنوات التي استُقبل فيها عمل فني مميز خلال الدراسة؟</div>",
             "parameters": {
@@ -1157,7 +1282,12 @@
         },
         "line-5-u-2": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "5-u-2", "cat": "count", "chartType": "line", "sorted": "u" },
+            "meta": {
+                "qId": "5-u-2",
+                "cat": "count",
+                "chartType": "line",
+                "sorted": "u"
+            },
             "description": "رسم بياني خطي (عملان فنيان مميزان): كم عدد السنوات التي استُقبل فيها عمل فني مميز؟",
             "instruction": "<div dir=\"rtl\">كم عدد السنوات التي استُقبل فيها عمل فني مميز خلال الدراسة؟<br><em>(يُشار إلى العمل الفني المميز بنقطة أكبر حجمًا.)</em></div>",
             "parameters": {
@@ -1177,7 +1307,12 @@
         },
         "line-6-count-until": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "6-count-until", "cat": "count", "chartType": "line", "sorted": "u" },
+            "meta": {
+                "qId": "6-count-until",
+                "cat": "count",
+                "chartType": "line",
+                "sorted": "u"
+            },
             "description": "رسم بياني خطي: كم سنة مضت قبل سنة العمل الفني المميز؟",
             "instruction": "<div dir=\"rtl\">كم سنة مضت قبل السنة التي استُقبل فيها العمل الفني المميز؟<br><em>(لا تقم بتضمين سنة العمل الفني المميز في حسابك.)</em></div>",
             "parameters": {
@@ -1197,7 +1332,12 @@
         },
         "line-6-count-from": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "6-count-from", "cat": "count", "chartType": "line", "sorted": "u" },
+            "meta": {
+                "qId": "6-count-from",
+                "cat": "count",
+                "chartType": "line",
+                "sorted": "u"
+            },
             "description": "رسم بياني خطي: كم سنة مرت بعد سنة العمل الفني المميز؟",
             "instruction": "<div dir=\"rtl\">كم سنة مرت بعد السنة التي استُقبل فيها العمل الفني المميز؟<br><em>(لا تقم بتضمين سنة العمل الفني المميز في حسابك.)</em></div>",
             "parameters": {
@@ -1217,7 +1357,12 @@
         },
         "line-7-extract-before-u": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-before-u", "cat": "extract-before", "chartType": "line", "sorted": "u" },
+            "meta": {
+                "qId": "7-extract-before-u",
+                "cat": "extract-before",
+                "chartType": "line",
+                "sorted": "u"
+            },
             "description": "رسم بياني خطي: كم عدد الأعمال الفنية في السنة السابقة للعمل الفني المميز؟",
             "instruction": "<div dir=\"rtl\">كم عدد الأعمال الفنية التي تم اقتناؤها في السنة السابقة لاستقبال العمل الفني المميز؟</div>",
             "parameters": {
@@ -1236,7 +1381,12 @@
         },
         "line-7-extract-before-sst": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-before-sst", "cat": "extract-before", "chartType": "line", "sorted": "sst" },
+            "meta": {
+                "qId": "7-extract-before-sst",
+                "cat": "extract-before",
+                "chartType": "line",
+                "sorted": "sst"
+            },
             "description": "رسم بياني خطي (مرتب من الأقصر إلى الأطول): كم عدد الأعمال الفنية في السنة السابقة للعمل الفني المميز؟",
             "instruction": "<div dir=\"rtl\">كم عدد الأعمال الفنية التي تم اقتناؤها في السنة السابقة لاستقبال العمل الفني المميز؟</div>",
             "parameters": {
@@ -1255,7 +1405,12 @@
         },
         "line-7-extract-before-sts": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-before-sts", "cat": "extract-before", "chartType": "line", "sorted": "sts" },
+            "meta": {
+                "qId": "7-extract-before-sts",
+                "cat": "extract-before",
+                "chartType": "line",
+                "sorted": "sts"
+            },
             "description": "رسم بياني خطي (مرتب من الأطول إلى الأقصر): كم عدد الأعمال الفنية في السنة السابقة للعمل الفني المميز؟",
             "instruction": "<div dir=\"rtl\">كم عدد الأعمال الفنية التي تم اقتناؤها في السنة السابقة لاستقبال العمل الفني المميز؟</div>",
             "parameters": {
@@ -1274,7 +1429,12 @@
         },
         "line-7-extract-after-u": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-after-u", "cat": "extract-after", "chartType": "line", "sorted": "u" },
+            "meta": {
+                "qId": "7-extract-after-u",
+                "cat": "extract-after",
+                "chartType": "line",
+                "sorted": "u"
+            },
             "description": "رسم بياني خطي: كم عدد الأعمال الفنية في السنة التالية للعمل الفني المميز؟",
             "instruction": "<div dir=\"rtl\">كم عدد الأعمال الفنية التي تم اقتناؤها في السنة التالية لاستقبال العمل الفني المميز؟</div>",
             "parameters": {
@@ -1293,7 +1453,12 @@
         },
         "line-7-extract-after-sst": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-after-sst", "cat": "extract-after", "chartType": "line", "sorted": "sst" },
+            "meta": {
+                "qId": "7-extract-after-sst",
+                "cat": "extract-after",
+                "chartType": "line",
+                "sorted": "sst"
+            },
             "description": "رسم بياني خطي (مرتب من الأقصر إلى الأطول): كم عدد الأعمال الفنية في السنة التالية للعمل الفني المميز؟",
             "instruction": "<div dir=\"rtl\">كم عدد الأعمال الفنية التي تم اقتناؤها في السنة التالية لاستقبال العمل الفني المميز؟</div>",
             "parameters": {
@@ -1312,7 +1477,12 @@
         },
         "line-7-extract-after-sts": {
             "baseComponent": "trial-numerical",
-            "meta": { "qId": "7-extract-after-sts", "cat": "extract-after", "chartType": "line", "sorted": "sts" },
+            "meta": {
+                "qId": "7-extract-after-sts",
+                "cat": "extract-after",
+                "chartType": "line",
+                "sorted": "sts"
+            },
             "description": "رسم بياني خطي (مرتب من الأطول إلى الأقصر): كم عدد الأعمال الفنية في السنة التالية للعمل الفني المميز؟",
             "instruction": "<div dir=\"rtl\">كم عدد الأعمال الفنية التي تم اقتناؤها في السنة التالية لاستقبال العمل الفني المميز؟</div>",
             "parameters": {
@@ -1374,33 +1544,53 @@
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["bar-2-sst", "bar-2-sts"]
+                                "components": [
+                                    "bar-2-sst",
+                                    "bar-2-sts"
+                                ]
                             },
                             "bar-3-u",
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["bar-4-sst", "bar-4-sts"]
+                                "components": [
+                                    "bar-4-sst",
+                                    "bar-4-sts"
+                                ]
                             },
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["bar-5-u-1", "bar-5-u-2"]
+                                "components": [
+                                    "bar-5-u-1",
+                                    "bar-5-u-2"
+                                ]
                             },
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["bar-6-count-until", "bar-6-count-from"]
+                                "components": [
+                                    "bar-6-count-until",
+                                    "bar-6-count-from"
+                                ]
                             },
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["bar-7-extract-before-u", "bar-7-extract-before-sst", "bar-7-extract-before-sts"]
+                                "components": [
+                                    "bar-7-extract-before-u",
+                                    "bar-7-extract-before-sst",
+                                    "bar-7-extract-before-sts"
+                                ]
                             },
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["bar-7-extract-after-u", "bar-7-extract-after-sst", "bar-7-extract-after-sts"]
+                                "components": [
+                                    "bar-7-extract-after-u",
+                                    "bar-7-extract-after-sst",
+                                    "bar-7-extract-after-sts"
+                                ]
                             }
                         ]
                     },
@@ -1412,33 +1602,53 @@
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["line-2-sst", "line-2-sts"]
+                                "components": [
+                                    "line-2-sst",
+                                    "line-2-sts"
+                                ]
                             },
                             "line-3-u",
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["line-4-sst", "line-4-sts"]
+                                "components": [
+                                    "line-4-sst",
+                                    "line-4-sts"
+                                ]
                             },
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["line-5-u-1", "line-5-u-2"]
+                                "components": [
+                                    "line-5-u-1",
+                                    "line-5-u-2"
+                                ]
                             },
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["line-6-count-until", "line-6-count-from"]
+                                "components": [
+                                    "line-6-count-until",
+                                    "line-6-count-from"
+                                ]
                             },
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["line-7-extract-before-u", "line-7-extract-before-sst", "line-7-extract-before-sts"]
+                                "components": [
+                                    "line-7-extract-before-u",
+                                    "line-7-extract-before-sst",
+                                    "line-7-extract-before-sts"
+                                ]
                             },
                             {
                                 "order": "random",
                                 "numSamples": 1,
-                                "components": ["line-7-extract-after-u", "line-7-extract-after-sst", "line-7-extract-after-sts"]
+                                "components": [
+                                    "line-7-extract-after-u",
+                                    "line-7-extract-after-sst",
+                                    "line-7-extract-after-sts"
+                                ]
                             }
                         ]
                     }
@@ -1447,7 +1657,9 @@
                     {
                         "firstLocation": 1,
                         "spacing": 1,
-                        "components": ["break"]
+                        "components": [
+                            "break"
+                        ]
                     }
                 ]
             },
