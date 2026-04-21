@@ -1112,7 +1112,7 @@
                 "sorted": "u"
             },
             "description": "رسم بياني خطي: كم سنة استغرقت عملية جمع البيانات؟",
-            "instruction": "<div dir=\"rtl\">كم سنة استغرقت عملية جمع البيانات؟<br><em>(تمثل كل نقطة في الرسم البياني سنة واحدة.)</em></div>",
+            "instruction": "<div dir=\"rtl\">كم سنة استغرقت عملية جمع البيانات؟<br>(تمثل كل نقطة في الرسم البياني سنة واحدة.)</div>",
             "parameters": {
                 "imagePath": "rtl-exp-ar/assets/line/img-trials/line-1-u.png",
                 "prompt": "الإجابة (بالسنوات):",
