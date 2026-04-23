@@ -1388,7 +1388,7 @@
                 "sorted": "u"
             },
             "description": "Line chart (unsorted): How many artworks in the year before the special artwork?",
-            "instruction": "How many artworks were curated in the year before the special artwork was received?",
+            "instruction": "How many artworks were curated in during year before the one with a special artwork?",
             "parameters": {
                 "imagePath": "rtl-exp-en/assets/line/img-trials/line-7-u.png",
                 "prompt": "Number of artworks:",
@@ -1412,7 +1412,7 @@
                 "sorted": "sst"
             },
             "description": "Line chart (sorted short-to-tall): How many artworks in the year before the special artwork?",
-            "instruction": "How many artworks were curated in the year before the special artwork was received?",
+            "instruction": "How many artworks were curated in during year before the one with a special artwork?",
             "parameters": {
                 "imagePath": "rtl-exp-en/assets/line/img-trials/line-7-sst.png",
                 "prompt": "Number of artworks:",
@@ -1436,7 +1436,7 @@
                 "sorted": "sts"
             },
             "description": "Line chart (sorted tall-to-short): How many artworks in the year before the special artwork?",
-            "instruction": "How many artworks were curated in the year before the special artwork was received?",
+            "instruction": "How many artworks were curated in during year before the one with a special artwork?",
             "parameters": {
                 "imagePath": "rtl-exp-en/assets/line/img-trials/line-7-sts.png",
                 "prompt": "Number of artworks:",
