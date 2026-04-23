@@ -16,6 +16,7 @@
     "uiConfig": {
         "contactEmail": "ltharrison@wpi.edu",
         "logoPath": "revisitAssets/revisitLogoSquare.svg",
+        "stylesheetPath": "rtl-exp-ar/assets/ar-overrides.css",
         "withProgressBar": false,
         "autoDownloadStudy": false,
         "withSidebar": false,
@@ -642,12 +643,12 @@
                     "location": "aboveStimulus",
                     "type": "dropdown",
                     "options": [
-                        "<div dir=\"rtl\">ذكر</div>",
-                        "<div dir=\"rtl\">أنثى</div>",
-                        "<div dir=\"rtl\">غير ثنائي</div>",
-                        "<div dir=\"rtl\">لا أعرف كيفية وصف نفسي</div>",
-                        "<div dir=\"rtl\">جنس لم يتم ذكره هنا</div>",
-                        "<div dir=\"rtl\">أفضل عدم الإجابة</div>"
+                        "ذكر",
+                        "أنثى",
+                        "غير ثنائي",
+                        "لا أعرف كيفية وصف نفسي",
+                        "جنس لم يتم ذكره هنا",
+                        "أفضل عدم الإجابة"
                     ]
                 },
                 {
@@ -659,30 +660,30 @@
                 },
                 {
                     "id": "q9-chart-creation",
-                    "prompt": "<div dir=\"rtl\">ما معدل إنشاء أو تصميمك للرسوم البيانية أو رسم البيانات؟</div>",
+                    "prompt": "<div dir=\"rtl\">ما معدل إنشائك أو تصميمك للرسوم البيانية؟</div>",
                     "required": true,
                     "location": "aboveStimulus",
                     "type": "dropdown",
                     "options": [
-                        "<div dir=\"rtl\">أبداً</div>",
-                        "<div dir=\"rtl\">أقل من مرة في الشهر</div>",
-                        "<div dir=\"rtl\">عدة مرات في الشهر</div>",
-                        "<div dir=\"rtl\">عدة مرات في الأسبوع</div>",
-                        "<div dir=\"rtl\">يومياً</div>"
+                        "أبداً",
+                        "أقل من مرة في الشهر",
+                        "عدة مرات في الشهر",
+                        "عدة مرات في الأسبوع",
+                        "يومياً"
                     ]
                 },
                 {
                     "id": "q10-chart-encounter",
-                    "prompt": "<div dir=\"rtl\">ما معدل مواجهتك للرسوم البيانية أو رسم البيانات؟</div>",
+                    "prompt": "<div dir=\"rtl\">ما معدل مصادفتك للرسوم البيانية؟</div>",
                     "required": true,
                     "location": "aboveStimulus",
                     "type": "dropdown",
                     "options": [
-                        "<div dir=\"rtl\">أبداً</div>",
-                        "<div dir=\"rtl\">أقل من مرة في الشهر</div>",
-                        "<div dir=\"rtl\">عدة مرات في الشهر</div>",
-                        "<div dir=\"rtl\">عدة مرات في الأسبوع</div>",
-                        "<div dir=\"rtl\">يومياً</div>"
+                        "أبداً",
+                        "أقل من مرة في الشهر",
+                        "عدة مرات في الشهر",
+                        "عدة مرات في الأسبوع",
+                        "يومياً"
                     ]
                 }
             ]
