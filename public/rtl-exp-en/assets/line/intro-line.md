@@ -31,6 +31,8 @@ Your task is to interpret the charts and answer questions about them.
   <video width="600" controls autoplay loop muted><source src="assets/line/intro-line-task-en.mp4" type="video/mp4"></video>
 </div>
  
+ <br/>
+ 
 - Each trial consists of a question and a chart. There are no trick questions.
 - Once you show a chart, **it will disappear after a few seconds** so, read it as quickly as possible.
 - You will see different linechart configurations, however, your task remains the same:

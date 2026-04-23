@@ -742,7 +742,7 @@
                 "sorted": "u"
             },
             "description": "Bar chart: How many days did the data collection last?",
-            "instruction": "How many days did the data collection last?\n\n*(Each bar in the graph represents one day.)*",
+            "instruction": "How many days did the data collection last?\n\n(Each bar in the graph represents one day.)",
             "parameters": {
                 "imagePath": "rtl-exp-en/assets/bar/img-trials/bar-1-u.svg",
                 "prompt": "Answer (in days):",
