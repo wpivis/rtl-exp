@@ -717,7 +717,7 @@
                 "sorted": "u"
             },
             "description": "رسم بياني عمودي: كم يوماً استغرقت عملية جمع البيانات؟",
-            "instruction": "<div dir=\"rtl\">كم يوماً استغرقت عملية جمع البيانات؟<br><em>(يمثل كل عمود في الرسم البياني يومًا واحدًا.)</em></div>",
+            "instruction": "<div dir=\"rtl\">كم يوماً استغرقت عملية جمع البيانات؟<br>(يمثل كل عمود في الرسم البياني يومًا واحدًا.)</div>",
             "parameters": {
                 "imagePath": "rtl-exp-ar/assets/bar/img-trials/bar-1-u.svg",
                 "prompt": "الإجابة (بالأيام):",
