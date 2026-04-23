@@ -1,0 +1,40 @@
+/* Arabic study (rtl-exp-ar) typography overrides.
+   Loaded only when rtl-exp-ar is the active study via uiConfig.stylesheetPath. */
+
+/* Many Arabic instructions/prompts are wrapped in raw HTML like <div dir="rtl">...
+   ReactMarkdown renders those as plain divs (browser default font-size), which reads too small.
+   Bump them to match the app's base markdown text size. */
+div[dir="rtl"] {
+  font-size: 1.25rem;
+  line-height: 1.65;
+}
+
+/* Increase form typography (demographics + chart task responses). */
+.response {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.response input,
+.response textarea,
+.response select {
+  font-size: 1.125rem;
+}
+
+/* Mantine component classes (kept broad for version differences). */
+.response :is(
+  .mantine-InputWrapper-label,
+  .mantine-InputWrapper-description,
+  .mantine-Input-input,
+  .mantine-TextInput-input,
+  .mantine-NumberInput-input,
+  .mantine-Textarea-input,
+  .mantine-Select-input,
+  .mantine-Select-option,
+  .mantine-Radio-label,
+  .mantine-Checkbox-label,
+  .mantine-Combobox-option
+) {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
