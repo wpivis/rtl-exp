@@ -19,9 +19,16 @@
         "withProgressBar": false,
         "autoDownloadStudy": false,
         "withSidebar": false,
+        "recordScreen": true,
+        "recordScreenFPS": 30,
         "showTitleBar": false,
         "showTitle": false
     },
+
+    "importedLibraries": [
+        "screen-recording"
+    ],
+
     "baseComponents": {
         "trial-numerical": {
             "type": "website",
@@ -1528,6 +1535,7 @@
         "order": "fixed",
         "components": [
             "consent",
+            "$screen-recording.components.screenRecordingPermission",
             "demographics",
             {
                 "order": "random",

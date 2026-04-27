@@ -178,7 +178,11 @@ export function useScreenRecording() {
   }, []);
 
   useEffect(() => {
-    if (currentComponent !== '$screen-recording.co.screenRecordingPermission' && currentComponent !== 'end' && screenCaptureStarted && !isScreenCapturing) {
+    const isPermissionComponent = currentComponent === '$screen-recording.co.screenRecordingPermission'
+      || currentComponent === '$screen-recording.components.screenRecordingPermission'
+      || currentComponent === 'screenRecordingPermissionAr';
+
+    if (!isPermissionComponent && currentComponent !== 'end' && screenCaptureStarted && !isScreenCapturing) {
       setIsRejected(true);
     }
   }, [currentComponent, isScreenCapturing, screenCaptureStarted]);

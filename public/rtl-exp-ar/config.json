@@ -21,14 +21,31 @@
         "autoDownloadStudy": false,
         "withSidebar": false,
         "showTitleBar": false,
+        "recordScreen": true,
+        "recordScreenFPS": 30,
         "showTitle": false,
         "nextButtonText": "التالي"
     },
+    "importedLibraries": [
+        "screen-recording"
+    ],
     "components": {
         "consent": {
             "type": "markdown",
             "path": "rtl-exp-ar/assets/consent.md",
             "response": []
+        },
+        "screenRecordingPermissionAr": {
+            "baseComponent": "$screen-recording.co.screenRecordingPermission",
+            "nextButtonText": "التالي",
+            "response": [
+                {
+                    "hidden": true,
+                    "type": "reactive",
+                    "id": "screenRecordingPermission",
+                    "prompt": "تم تفعيل تسجيل الشاشة"
+                }
+            ]
         },
         "demographics": {
             "type": "questionnaire",
@@ -1533,6 +1550,7 @@
         "order": "fixed",
         "components": [
             "consent",
+            "screenRecordingPermissionAr",
             "demographics",
             {
                 "order": "random",
