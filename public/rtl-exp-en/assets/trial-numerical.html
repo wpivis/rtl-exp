@@ -141,11 +141,14 @@
     const answerContainer = document.getElementById('answer-container');
 
     showButton.addEventListener('click', () => {
+      console.log('Show Chart button clicked');
       showButton.style.display = 'none';
       stimulusContainer.style.display = 'block';
+      Revisit.postEvent('showChartClicked', 'show-button');
 
       setTimeout(() => {
         const chartImg = document.getElementById('chart-img');
+        Revisit.postEvent('hideChartClicked', 'show-button');
         if (chartImg) chartImg.remove();
         stimulusContainer.remove();
         answerContainer.classList.add('visible');

@@ -26,6 +26,8 @@ import { useStorageEngine } from '../../storage/storageEngineHooks';
 import { useStudyConfig } from '../../store/hooks/useStudyConfig';
 import { useStoredAnswer } from '../../store/hooks/useStoredAnswer';
 import { responseAnswerIsCorrect } from '../../utils/correctAnswer';
+import { useMouseTracking } from '../../store/hooks/useMouseTracking';
+import { useMouseTrackingContext } from '../../store/hooks/MouseTrackingContext';
 
 type Props = {
   status?: StoredAnswer;
@@ -59,6 +61,16 @@ export function ResponseBlock({
   const currentStep = useCurrentStep();
   const studyId = useStudyId();
   const isArabicStudy = studyId === 'rtl-exp-ar';
+
+  // Initialize mouse tracking for this response block
+  const {
+    mouseTracking, startTracking, stopTracking, setChartBounds,
+  } = useMouseTracking({
+    enabled: true,
+  });
+
+  const { registerMouseTracking } = useMouseTrackingContext();
+
   const currentProvenance = useStoreSelector((state) => state.analysisProvState[location]) as FormElementProvenance | undefined;
 
   const storedAnswer = useMemo(() => currentProvenance?.form || status?.answer, [currentProvenance, status]);
@@ -66,6 +78,78 @@ export function ResponseBlock({
   const formOrders: Record<string, string[]> = useMemo(() => storedAnswerData?.formOrder || {}, [storedAnswerData]);
 
   const navigate = useNavigate();
+
+  // Listen for chart bounds and control tracking
+  useEffect(() => {
+    const handleChartBoundsDetected = (event: Event) => {
+      const customEvent = event as CustomEvent;
+      setChartBounds(customEvent.detail);
+      // Start tracking ONLY when chart is shown
+      startTracking();
+    };
+
+    const handleStopChartTracking = (_event: Event) => {
+      stopTracking();
+      setChartBounds(null);
+    };
+
+    // Listen for iframe mouse events and forward them as synthetic events
+    // Only forward when chart bounds are set (chart is visible)
+    const handleIframeMouseMove = (event: Event) => {
+      const customEvent = event as CustomEvent;
+      const { clientX, clientY } = customEvent.detail;
+
+      // Create a synthetic mouse event that can be processed by the tracking logic
+      const syntheticEvent = new MouseEvent('mousemove', {
+        clientX,
+        clientY,
+        bubbles: true,
+        cancelable: true,
+      });
+      // Dispatch to window so listeners can pick it up
+      window.dispatchEvent(syntheticEvent);
+    };
+
+    const handleIframeMouseDown = (event: Event) => {
+      const customEvent = event as CustomEvent;
+      const { clientX, clientY } = customEvent.detail;
+
+      const syntheticEvent = new MouseEvent('mousedown', {
+        clientX,
+        clientY,
+        bubbles: true,
+        cancelable: true,
+      });
+      window.dispatchEvent(syntheticEvent);
+    };
+
+    const handleIframeMouseUp = (event: Event) => {
+      const customEvent = event as CustomEvent;
+      const { clientX, clientY } = customEvent.detail;
+
+      const syntheticEvent = new MouseEvent('mouseup', {
+        clientX,
+        clientY,
+        bubbles: true,
+        cancelable: true,
+      });
+      window.dispatchEvent(syntheticEvent);
+    };
+
+    window.addEventListener('chartBoundsDetected', handleChartBoundsDetected);
+    window.addEventListener('stopChartTracking', handleStopChartTracking);
+    window.addEventListener('iframeMouseMove', handleIframeMouseMove);
+    window.addEventListener('iframeMouseDown', handleIframeMouseDown);
+    window.addEventListener('iframeMouseUp', handleIframeMouseUp);
+
+    return () => {
+      window.removeEventListener('chartBoundsDetected', handleChartBoundsDetected);
+      window.removeEventListener('stopChartTracking', handleStopChartTracking);
+      window.removeEventListener('iframeMouseMove', handleIframeMouseMove);
+      window.removeEventListener('iframeMouseDown', handleIframeMouseDown);
+      window.removeEventListener('iframeMouseUp', handleIframeMouseUp);
+    };
+  }, [setChartBounds, startTracking, stopTracking]);
 
   const allResponses = useMemo(() => (formOrders?.response
     ? formOrders.response
@@ -140,6 +224,13 @@ export function ResponseBlock({
   const disabledAttempts = usedAllAttempts || hasCorrectAnswer;
   const showBtnsInLocation = useMemo(() => location === (config?.nextButtonLocation ?? studyConfig.uiConfig.nextButtonLocation ?? 'belowStimulus'), [config, studyConfig, location]);
   const identifier = useCurrentIdentifier();
+
+  // Register mouse tracking data with context when available
+  useEffect(() => {
+    if (mouseTracking && identifier) {
+      registerMouseTracking(identifier, mouseTracking);
+    }
+  }, [mouseTracking, identifier, registerMouseTracking]);
 
   const answerValidator = useAnswerField(responsesWithDefaults, currentStep, storedAnswer || {});
   useEffect(() => {
