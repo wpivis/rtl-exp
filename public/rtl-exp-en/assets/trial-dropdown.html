@@ -150,10 +150,13 @@
     const answerContainer = document.getElementById('answer-container');
 
     showButton.addEventListener('click', () => {
+      console.log('Show Chart button clicked');
       showButton.style.display = 'none';
       stimulusContainer.style.display = 'block';
+      Revisit.postEvent('showChartClicked', 'show-button');
 
       setTimeout(() => {
+        Revisit.postEvent('hideChartClicked', 'show-button');
         const chartImg = document.getElementById('chart-img');
         if (chartImg) chartImg.remove();
         stimulusContainer.remove();

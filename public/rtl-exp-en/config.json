@@ -505,7 +505,7 @@
                         "Italian",
                         "Japanese",
                         "Kannada",
-                        "Korean",
+                        "Korean", "Malagasy",
                         "Malayalam",
                         "Malaysian",
                         "Mandarin Chinese",
@@ -530,7 +530,9 @@
                         "Vietnamese",
                         "Yoruba",
                         "Zulu"
-                    ]
+                    ],
+                    "minSelections": 1,
+                    "maxSelections":1
                 },
                 {
                     "id": "q5-speak-languages",
@@ -898,6 +900,7 @@
             "parameters": {
                 "imagePath": "rtl-exp-en/assets/bar/img-trials/bar-5-u-1.svg",
                 "prompt": "Number of holidays:",
+                "note": "A holiday is represented by a black bar.",
                 "responseId": "bar-5-u-1-ans"
             },
             "response": [

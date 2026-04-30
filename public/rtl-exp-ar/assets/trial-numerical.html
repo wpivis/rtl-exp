@@ -143,9 +143,11 @@
     showButton.addEventListener('click', () => {
       showButton.style.display = 'none';
       stimulusContainer.style.display = 'block';
+      Revisit.postEvent('showChartClicked', 'show-button');
 
       setTimeout(() => {
         const chartImg = document.getElementById('chart-img');
+        Revisit.postEvent('hideChartClicked', 'show-button');
         if (chartImg) chartImg.remove();
         stimulusContainer.remove();
         answerContainer.classList.add('visible');

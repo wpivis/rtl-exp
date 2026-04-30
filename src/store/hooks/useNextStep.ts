@@ -15,6 +15,7 @@ import { StoredAnswer, ValidationStatus } from '../types';
 import { useStorageEngine } from '../../storage/storageEngineHooks';
 import { useStoredAnswer } from './useStoredAnswer';
 import { useWindowEvents } from './useWindowEvents';
+import { useMouseTrackingContext } from './MouseTrackingContext';
 import { findBlockForStep, findIndexOfBlock } from '../../utils/getSequenceFlatMap';
 import { useStudyConfig } from './useStudyConfig';
 import {
@@ -45,6 +46,9 @@ function checkAllAnswersCorrect(answers: StoredAnswer['answer'], componentId: st
 export function useNextStep() {
   const currentStep = useCurrentStep();
   const participantSequence = useFlatSequence();
+  const identifier = useCurrentIdentifier();
+
+  const { getMouseTracking } = useMouseTrackingContext();
 
   const trialValidation = useStoreSelector((state) => state.trialValidation);
   const sequence = useStoreSelector((state) => state.sequence);
@@ -54,7 +58,6 @@ export function useNextStep() {
   const studyConfig = useStudyConfig();
 
   const { funcIndex } = useParams();
-  const identifier = useCurrentIdentifier();
 
   const storeDispatch = useStoreDispatch();
   const {
@@ -101,6 +104,9 @@ export function useNextStep() {
     const currentWindowEvents = windowEvents && 'current' in windowEvents && windowEvents.current ? windowEvents.current.splice(0, windowEvents.current.length) : [];
 
     if (dataCollectionEnabled && (storedAnswer.endTime === -1 || clickedPrevious)) {
+      // Get mouse tracking data for this component
+      const mouseTracking = getMouseTracking(identifier);
+
       const toSave = {
         ...storedAnswer,
         answer: collectData ? answer : {},
@@ -109,6 +115,7 @@ export function useNextStep() {
         provenanceGraph,
         windowEvents: currentWindowEvents,
         timedOut: !collectData,
+        ...(mouseTracking && { mouseTracking }),
       };
       storeDispatch(
         saveTrialAnswer({
@@ -212,7 +219,7 @@ export function useNextStep() {
     } else {
       navigate(`/${studyId}/${encryptIndex(nextStep)}${window.location.search}`);
     }
-  }, [currentStep, trialValidation, identifier, storedAnswer, windowEvents, dataCollectionEnabled, clickedPrevious, sequence, answers, startTime, funcIndex, storeDispatch, saveTrialAnswer, storageEngine, setReactiveAnswers, setMatrixAnswersCheckbox, setMatrixAnswersRadio, setRankingAnswers, studyConfig, participantSequence, navigate, studyId]);
+  }, [currentStep, trialValidation, identifier, storedAnswer, windowEvents, dataCollectionEnabled, clickedPrevious, sequence, answers, startTime, funcIndex, storeDispatch, saveTrialAnswer, storageEngine, setReactiveAnswers, setMatrixAnswersCheckbox, setMatrixAnswersRadio, setRankingAnswers, studyConfig, participantSequence, navigate, studyId, getMouseTracking]);
 
   return {
     isNextDisabled,

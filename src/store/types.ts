@@ -4,6 +4,7 @@ import type {
   Answer, ConfigResponseBlockLocation, ParticipantData, ResponseBlockLocation, SkipConditions, StringOption, StudyConfig, ValueOf,
 } from '../parser/types';
 import { type REVISIT_MODE } from '../storage/engines/types';
+import { MouseTrackingData } from '../utils/mouseTracking';
 
 /**
  * The ParticipantMetadata object contains metadata about the participant. This includes the user agent, resolution, language, and IP address. This object is used to store information about the participant that is not directly related to the study itself.
@@ -126,6 +127,8 @@ export interface StoredAnswer {
   questionOrders: Record<string, string[]>;
   /** The order of the form elements in a base response. */
   formOrder?: Record<string, string[]>;
+  /** Independent mouse tracking data for this component, capturing mouse movements, clicks, and positions relative to this specific question. */
+  mouseTracking?: MouseTrackingData;
 }
 
 export interface JumpFunctionParameters<T> {
