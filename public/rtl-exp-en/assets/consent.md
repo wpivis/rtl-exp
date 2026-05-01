@@ -2,7 +2,7 @@ Before starting the study, please read this page carefully.
 
 **The goal of this research is** to understand how people read data visualization to form their most intuitive answer to a given question.
 
-**Procedure:** You will read about a fictitious context for which data was collected and visualized. The study asks questions about what you see on the visualizations. You will have to identify a specific element or count elements in the chart. The charts will be visible only for a short time, so read it quickly, then type your answer in the provided area below it.
+**Procedure:** You will read about a fictitious context for which data was collected and visualized. The study asks questions about what you see on the visualizations. You will have to identify a specific element or count elements in the chart. The charts will be visible only for a short time, so read it quickly, then provide your answer in the provided area below it.
 
 **What you will get:** We hope that you will find the exercise enjoyable. Your participation will help us understand how people quickly read charts to form answer to questions.
 
