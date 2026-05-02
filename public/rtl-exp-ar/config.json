@@ -659,8 +659,8 @@
                     "type": "shortText"
                 },
                 {
-                    "id": "q9-chart-creation",
-                    "prompt": "<div dir=\"rtl\">ما معدل إنشائك أو تصميمك للرسوم البيانية؟</div>",
+                    "id": "q10-chart-encounter",
+                    "prompt": "<div dir=\"rtl\">ما معدل مصادفتك للرسوم البيانية؟</div>",
                     "required": true,
                     "location": "aboveStimulus",
                     "type": "dropdown",
@@ -673,8 +673,8 @@
                     ]
                 },
                 {
-                    "id": "q10-chart-encounter",
-                    "prompt": "<div dir=\"rtl\">ما معدل مصادفتك للرسوم البيانية؟</div>",
+                    "id": "q9-chart-creation",
+                    "prompt": "<div dir=\"rtl\">ما معدل إنشائك أو تصميمك للرسوم البيانية؟</div>",
                     "required": true,
                     "location": "aboveStimulus",
                     "type": "dropdown",
