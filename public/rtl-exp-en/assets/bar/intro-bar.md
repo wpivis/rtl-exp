@@ -1,3 +1,14 @@
+<div class="rtl-exp-en-page">
+<style>
+/* Scoped line-height for rtl-exp-en consent/intro pages. Adjust value as needed. */
+.rtl-exp-en-page,
+.rtl-exp-en-page .markdown,
+.rtl-exp-en-page p,
+.rtl-exp-en-page li {
+  line-height: 1.6;
+}
+</style>
+
 # Instructions
 
 In this section of the study, consider the following scenario.
@@ -39,3 +50,5 @@ Your task is to interpret the charts and answer questions to help understand the
 Read the question → show the chart → answer using a dropdown list, or write in a text area.
 
 You can access the summary of this instruction page at any time by clicking on the help icon at the bottom of the next page.
+
+</div>

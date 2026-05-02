@@ -686,8 +686,8 @@
                     "type": "shortText"
                 },
                 {
-                    "id": "q9-chart-creation",
-                    "prompt": "How often do you create or design charts or data visualizations?",
+                    "id": "q10-chart-encounter",
+                    "prompt": "How often do you encounter charts or data visualizations?",
                     "required": true,
                     "location": "aboveStimulus",
                     "type": "dropdown",
@@ -700,8 +700,8 @@
                     ]
                 },
                 {
-                    "id": "q10-chart-encounter",
-                    "prompt": "How often do you encounter charts or data visualizations?",
+                    "id": "q9-chart-creation",
+                    "prompt": "How often do you create or design charts or data visualizations?",
                     "required": true,
                     "location": "aboveStimulus",
                     "type": "dropdown",
@@ -1391,7 +1391,7 @@
                 "sorted": "u"
             },
             "description": "Line chart (unsorted): How many artworks in the year before the special artwork?",
-            "instruction": "How many artworks were curated in during year before the one with a special artwork?",
+            "instruction": "How many artworks were curated during the year before the one with a special artwork?",
             "parameters": {
                 "imagePath": "rtl-exp-en/assets/line/img-trials/line-7-u.png",
                 "prompt": "Number of artworks:",
@@ -1415,7 +1415,7 @@
                 "sorted": "sst"
             },
             "description": "Line chart (sorted short-to-tall): How many artworks in the year before the special artwork?",
-            "instruction": "How many artworks were curated in during year before the one with a special artwork?",
+            "instruction": "How many artworks were curated during the year before the one with a special artwork?",
             "parameters": {
                 "imagePath": "rtl-exp-en/assets/line/img-trials/line-7-sst.png",
                 "prompt": "Number of artworks:",
@@ -1439,7 +1439,7 @@
                 "sorted": "sts"
             },
             "description": "Line chart (sorted tall-to-short): How many artworks in the year before the special artwork?",
-            "instruction": "How many artworks were curated in during year before the one with a special artwork?",
+            "instruction": "How many artworks were curated during the year before the one with a special artwork?",
             "parameters": {
                 "imagePath": "rtl-exp-en/assets/line/img-trials/line-7-sts.png",
                 "prompt": "Number of artworks:",
