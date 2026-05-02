@@ -1,3 +1,14 @@
+<div class="rtl-exp-en-page">
+<style>
+/* Scoped line-height for rtl-exp-en consent/intro pages. Adjust value as needed. */
+.rtl-exp-en-page,
+.rtl-exp-en-page .markdown,
+.rtl-exp-en-page p,
+.rtl-exp-en-page li {
+	line-height: 1.6;
+}
+</style>
+
 Before starting the study, please read this page carefully.
 
 **The goal of this research is** to understand how people read data visualization to form their most intuitive answer to a given question.
@@ -19,3 +30,5 @@ Before starting the study, please read this page carefully.
 For more information about your rights as a research participant, or any concerns related to this study, please contact Prof. Lane Harrison ([ltharrison@wpi.edu](mailto:ltharrison@wpi.edu))
 
 By filling in the following form, and clicking 'SIGN', you agree to participate in the study.
+
+</div>

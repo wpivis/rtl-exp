@@ -6,6 +6,25 @@ In this section of the study, consider the following scenario.
 You are part of a team that studies the artworks at your local museum.
 
 In the following pages, you will see a series of line charts that show the total number of artworks curated over several years.
+<div class="rtl-exp-en-page">
+<style>
+/* Scoped line-height for rtl-exp-en consent/intro pages. Adjust value as needed. */
+.rtl-exp-en-page,
+.rtl-exp-en-page .markdown,
+.rtl-exp-en-page p,
+.rtl-exp-en-page li {
+  line-height: 1.6;
+}
+</style>
+
+# Instructions
+
+In this section of the study, consider the following scenario.
+
+<div class="hover-box">
+You are part of a team that studies the artworks at your local museum.
+
+In the following pages, you will see a series of line charts that show the total number of artworks curated over several years.
 </div>
 
 Your task is to interpret the charts and answer questions about them.
@@ -30,12 +49,14 @@ Your task is to interpret the charts and answer questions about them.
 <div style="text-align: center;">
   <video width="600" controls autoplay loop muted><source src="assets/line/intro-line-task-en.mp4" type="video/mp4"></video>
 </div>
- 
- <br/>
- 
+
+<br/>
+
 - Each trial consists of a question and a chart. There are no trick questions.
 - Once you show a chart, **it will disappear after a few seconds** so, read it as quickly as possible.
 - You will see different linechart configurations, however, your task remains the same:
 Read the question → show the chart → answer using a dropdown list, or write in a text area.
 
 You can access the summary of this instruction page at any time by clicking on the help icon at the bottom of the next page.
+
+</div>
