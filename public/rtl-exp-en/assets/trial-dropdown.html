@@ -1,13 +1,19 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trial Stimulus</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    html, body {
+    html,
+    body {
       height: 90%;
     }
 
@@ -56,11 +62,11 @@
     }
 
     #chart-img {
-        width: 900px;
-        height: 70vh;
-        object-fit: contain;
-      }
-      
+      width: 900px;
+      height: 70vh;
+      object-fit: contain;
+    }
+
     #answer-container {
       display: none;
       flex-direction: column;
@@ -91,6 +97,7 @@
     }
   </style>
 </head>
+
 <body>
   <div id="container">
     <button id="show-button">Show the Chart</button>
@@ -124,7 +131,7 @@
 
     let responseId = 'trial-ans';
 
-    Revisit.onDataReceive(function(data) {
+    Revisit.onDataReceive(function (data) {
       const imagePath = data['imagePath'] || '';
       const prompt = data['prompt'] || 'Your answer:';
       const options = data['options'] || [];
@@ -172,4 +179,5 @@
     });
   </script>
 </body>
+
 </html>
