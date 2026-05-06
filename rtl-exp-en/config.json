@@ -505,7 +505,8 @@
                         "Italian",
                         "Japanese",
                         "Kannada",
-                        "Korean", "Malagasy",
+                        "Korean",
+                        "Malagasy",
                         "Malayalam",
                         "Malaysian",
                         "Mandarin Chinese",
@@ -532,7 +533,7 @@
                         "Zulu"
                     ],
                     "minSelections": 1,
-                    "maxSelections":1
+                    "maxSelections": 1
                 },
                 {
                     "id": "q5-speak-languages",
