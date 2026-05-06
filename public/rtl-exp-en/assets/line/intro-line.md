@@ -1,11 +1,3 @@
-# Instructions
-
-In this section of the study, consider the following scenario.
-
-<div class="hover-box">
-You are part of a team that studies the artworks at your local museum.
-
-In the following pages, you will see a series of line charts that show the total number of artworks curated over several years.
 <div class="rtl-exp-en-page">
 <style>
 /* Scoped line-height for rtl-exp-en consent/intro pages. Adjust value as needed. */
@@ -57,6 +49,6 @@ Your task is to interpret the charts and answer questions about them.
 - You will see different linechart configurations, however, your task remains the same:
 Read the question → show the chart → answer using a dropdown list, or write in a text area.
 
-You can access the summary of this instruction page at any time by clicking on the help icon at the bottom of the next page.
+<!-- You can access the summary of this instruction page at any time by clicking on the help icon at the bottom of the next page. -->
 
 </div>
