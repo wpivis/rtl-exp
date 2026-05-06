@@ -15,7 +15,6 @@ In this section of the study, consider the following scenario.
 
 <div class="hover-box">
 You are part of a team that studies the artworks at your local museum.
-
 In the following pages, you will see a series of line charts that show the total number of artworks curated over several years.
 </div>
 

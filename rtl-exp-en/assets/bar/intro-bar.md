@@ -19,7 +19,7 @@ You are part of a research team at your local Art Museum, tasked with analyzing 
 In the following pages, you will be presented with a series of bar charts that show the number of daily visitors over several days.
 </div>
 
-Your task is to interpret the charts and answer questions to help understand the museum's daily attendance.
+Your task is to interpret the charts and answer questions about the museum's daily attendance.
 <!-- -------------------------------------------- -->
 <div class="highlight-box"><b> About the barchart </b></div>
 
@@ -49,6 +49,6 @@ Your task is to interpret the charts and answer questions to help understand the
 - You will see different barchart configurations, however, your task remains the same:
 Read the question → show the chart → answer using a dropdown list, or write in a text area.
 
-You can access the summary of this instruction page at any time by clicking on the help icon at the bottom of the next page.
+<!-- You can access the summary of this instruction page at any time by clicking on the help icon at the bottom of the next page. -->
 
 </div>
