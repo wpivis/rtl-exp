@@ -2,7 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.3.2/src/parser/GlobalConfigSchema.json",
   "configsList": [
     "rtl-exp-en",
-    "rtl-exp-ar"
+    "rtl-exp-ar",
+    "rtl-exp-ar-western"
   ],
   "configs": {
     "rtl-exp-en": {
@@ -10,6 +11,9 @@
     },
     "rtl-exp-ar": {
       "path": "rtl-exp-ar/config.json"
+    },
+    "rtl-exp-ar-western": {
+      "path": "rtl-exp-ar-western/config.json"
     }
   }
 }
