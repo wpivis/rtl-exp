@@ -7,7 +7,7 @@ import {
 import { Provider } from 'react-redux';
 import { RouteObject, useRoutes, useSearchParams } from 'react-router';
 import {
-  Button, LoadingOverlay, Stack, Text, Title,
+  Box, Button, Loader, Stack, Text, Title,
 } from '@mantine/core';
 import {
   GlobalConfig,
@@ -463,7 +463,23 @@ export function Shell({ globalConfig }: { globalConfig: GlobalConfig }) {
 
   return (
     <>
-      <LoadingOverlay visible={isLoading} />
+      {isLoading && (
+        <Box
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 400,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: 'rgba(255, 255, 255, 0.75)',
+          }}
+        >
+          <Loader />
+          <Text mt="md">Please wait, the experiment is loading</Text>
+        </Box>
+      )}
       {showCompletionCheckError && (
         <Stack
           align="center"
