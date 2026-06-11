@@ -477,7 +477,7 @@ export function Shell({ globalConfig }: { globalConfig: GlobalConfig }) {
           }}
         >
           <Loader />
-          <Text mt="md">يرجى الانتظار، الصفحة قيد التحميل.</Text>
+          <Text mt="md">.يرجى الانتظار، الصفحة قيد التحميل</Text>
         </Box>
       )}
       {showCompletionCheckError && (
